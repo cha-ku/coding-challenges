@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(cppwc)
+add_executable(cppwc cppwc.cpp)
+set_property(TARGET cppwc PROPERTY CXX_STANDARD 20)
+target_include_directories(cppwc PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
